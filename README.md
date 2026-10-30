@@ -60,9 +60,9 @@ npm test
 ## Assumptions
 
 The app exposes:
-- `GET /homepage`
+- `GET /`
 - `POST /greet` with `firstName` and `lastName` form fields
-- `POST /home`, redirecting to `/homepage`
+- `POST /home`, redirecting to `/`
 
 For accessible UI locators, form inputs should have associated labels such as `First Name` and `Last Name`, and the return button should be named `Return to Home Page`. Adjust the Page Object locators if your HTML uses different accessible names.
 
