@@ -18,7 +18,7 @@ jobs:
     env:
       TOMCAT_HOME: 'C:\Tomcat_1\apache-tomcat-11.0.27'
       APP_NAME: 'greeting-app'
-      BASE_URL: 'http://localhost:8080/greeting-app/'
+      BASE_URL: 'http://localhost:8080/greeting-app'
 
     steps:
       # 1. Checkout Playwright project
