@@ -11,7 +11,7 @@ export default defineConfig({
   expect: { timeout: 5_000 },
   use: {
     baseURL: process.env.BASE_URL ?? 'http://localhost:8080/greeting-app',
-    trace: 'retain-on-failure',
+    trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     headless: true
