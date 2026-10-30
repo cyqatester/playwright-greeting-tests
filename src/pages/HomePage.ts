@@ -14,11 +14,11 @@ export class HomePage {
   }
 
   async goto(): Promise<void> {
-    await this.page.goto('/greeting-app/homepage');
+    await this.page.goto('/greeting-app');
   }
 
   async expectLoaded(): Promise<void> {
-    await expect(this.page).toHaveURL(/\/homepage\/?$/);
+    await expect(this.page).toHaveURL(/\/greeting-app\/?$/);
     await expect(this.firstNameInput).toBeVisible();
     await expect(this.lastNameInput).toBeVisible();
     await expect(this.submitButton).toBeVisible();

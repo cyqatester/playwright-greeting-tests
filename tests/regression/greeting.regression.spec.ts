@@ -38,7 +38,7 @@ test.describe('Greeting workflow regression', () => {
     const home = new HomePage(page);
     await home.goto();
     await home.submit();
-    await expect(page).toHaveURL(/\/homepage\/?$/);
+    await expect(page).toHaveURL(/\/greeting-app\/?$/);
     await expect(home.firstNameInput).toBeVisible();
     await expect(home.lastNameInput).toBeVisible();
   });
